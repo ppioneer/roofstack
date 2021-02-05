@@ -1,0 +1,277 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Roofstock",
+		"_postman_id": "e49d6694-b266-7246-95ad-388b2cb74c3c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "oAuth_Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "https://roofstock2-dev-ed.my.salesforce.com/services/oauth2/token?client_id=3MVG9kBt168mda__qAp3mlxUF1PxmyRX.49bJVusIOJNmyvnpWVemxL7x6D_n5qS0hqV7OTPbOHdGcYLcw82W&client_secret=EFFC41C47072D7557ED29B7E48B214008E9BEF71D5158A39F67D99E1B79C463D&username=validationuser@roofstock.com&password=6yhn^TFCv0Cclt0FLb76J2KwJpQ4Qt4MR&grant_type=password",
+					"protocol": "https",
+					"host": [
+						"roofstock2-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "3MVG9kBt168mda__qAp3mlxUF1PxmyRX.49bJVusIOJNmyvnpWVemxL7x6D_n5qS0hqV7OTPbOHdGcYLcw82W",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "client_secret",
+							"value": "EFFC41C47072D7557ED29B7E48B214008E9BEF71D5158A39F67D99E1B79C463D",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "username",
+							"value": "validationuser@roofstock.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "6yhn^TFCv0Cclt0FLb76J2KwJpQ4Qt4MR",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "oAuth Connection to SFDC"
+			},
+			"response": [
+				{
+					"id": "7c244844-9c7a-4d79-8186-9d4ea04884a0",
+					"name": "oAuth_Login",
+					"originalRequest": {
+						"url": {
+							"raw": "https://roofstock2-dev-ed.my.salesforce.com/services/oauth2/token?client_id=3MVG9kBt168mda__qAp3mlxUF1PxmyRX.49bJVusIOJNmyvnpWVemxL7x6D_n5qS0hqV7OTPbOHdGcYLcw82W&client_secret=EFFC41C47072D7557ED29B7E48B214008E9BEF71D5158A39F67D99E1B79C463D&username=validationuser@roofstock.com&password=6yhn^TFCv0Cclt0FLb76J2KwJpQ4Qt4MR&grant_type=password",
+							"protocol": "https",
+							"host": [
+								"roofstock2-dev-ed",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "3MVG9kBt168mda__qAp3mlxUF1PxmyRX.49bJVusIOJNmyvnpWVemxL7x6D_n5qS0hqV7OTPbOHdGcYLcw82W",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "client_secret",
+									"value": "EFFC41C47072D7557ED29B7E48B214008E9BEF71D5158A39F67D99E1B79C463D",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "username",
+									"value": "validationuser@roofstock.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "6yhn^TFCv0Cclt0FLb76J2KwJpQ4Qt4MR",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-encoding",
+							"key": "content-encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 05 Feb 2021 03:08:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expect-ct",
+							"key": "expect-ct",
+							"value": "max-age=86400, report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4x000006tTbUm\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "public-key-pins-report-only",
+							"key": "public-key-pins-report-only",
+							"value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4x000006tTbUm\";",
+							"description": "Custom header"
+						},
+						{
+							"name": "referrer-policy",
+							"key": "referrer-policy",
+							"value": "origin-when-cross-origin",
+							"description": "Custom header"
+						},
+						{
+							"name": "strict-transport-security",
+							"key": "strict-transport-security",
+							"value": "max-age=31536002; includeSubDomains",
+							"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "x-b3-sampled",
+							"key": "x-b3-sampled",
+							"value": "0",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-b3-spanid",
+							"key": "x-b3-spanid",
+							"value": "9291efe3271140da",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-b3-traceid",
+							"key": "x-b3-traceid",
+							"value": "9291efe3271140da",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-readonlymode",
+							"key": "x-readonlymode",
+							"value": "false",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-robots-tag",
+							"key": "x-robots-tag",
+							"value": "none",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-xss-protection",
+							"key": "x-xss-protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"responseTime": 571,
+					"body": "{\"access_token\":\"00D4x000006tTbU!AQYAQPLk217M3S3w3.SsqLbFNWYs3zViue34GjDnGqwRaM2bDoFP5VCCyI3bg6b0AzX9iK6Eu6t_vV1ckaIwvvEwlB27mnT6\",\"instance_url\":\"https://roofstock2-dev-ed.my.salesforce.com\",\"id\":\"https://login.salesforce.com/id/00D4x000006tTbUEAU/0054x000003rKFwAAM\",\"token_type\":\"Bearer\",\"issued_at\":\"1612494516343\",\"signature\":\"Lo6bIWp4PG3eWdj+SZA3K8v87A+vXtqPjCQx7CkGo3g=\"}"
+				}
+			]
+		},
+		{
+			"name": "Assingment Validation",
+			"request": {
+				"url": "https://roofstock2-dev-ed.my.salesforce.com/services/apexrest/roofstock/v1/opportunities/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D4x000006tTbU!AQYAQPLk217M3S3w3.SsqLbFNWYs3zViue34GjDnGqwRaM2bDoFP5VCCyI3bg6b0AzX9iK6Eu6t_vV1ckaIwvvEwlB27mnT6",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
