@@ -3,10 +3,12 @@
 
 Rest Service to process json and create Account, Contact and Opportunities if they are not exist in System
 
-Setps to Configure your Postman: 
-	1. Open Postman
+
+1. Setps to Configure your Postman: 
+	1. Download the Roofstock.postman_collection_v2 from the repo
+	2. Open Postman
 	2. Check the Import Options
-			a. Import the collections file which was shared by the resource
+			a. Import the collections file which you downloaded(Step 1)
 	3. Select the Roofstack folder on left hand side
 			a. Click on "oAuth_Login" request tab
 			b. Hit the Send request button
@@ -19,7 +21,9 @@ Setps to Configure your Postman:
 	5. Now hit send request
 			a. If the request is success(Status code = 200) ==> Records created/updated successfully
 			b. If the request is failed (status code = 400) ==> for any errors
-			
+
+2. Download the clasess zip file to your local and deploy to your sandbox to validate/Testing
+
 	
 ***	EOF ***
 	
